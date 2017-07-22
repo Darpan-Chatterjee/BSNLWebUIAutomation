@@ -1,85 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="BSNLWebUIRegression" duration-ms="88653" started-at="2017-07-21T21:39:15Z" finished-at="2017-07-21T21:40:44Z">
+  <suite name="BSNLWebUIRegression" duration-ms="129120" started-at="2017-07-22T10:56:59Z" finished-at="2017-07-22T10:59:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="88653" started-at="2017-07-21T21:39:15Z" finished-at="2017-07-21T21:40:44Z">
-      <class name="com.BSNL.WebUI.test.login.SignInTC01">
-        <test-method status="PASS" signature="folderCreate()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@55536d9e]" name="folderCreate" is-config="true" duration-ms="268" started-at="2017-07-22T03:09:15Z" finished-at="2017-07-22T03:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- folderCreate -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@55536d9e]" name="Setup" is-config="true" duration-ms="8045" started-at="2017-07-22T03:09:16Z" finished-at="2017-07-22T03:09:24Z">
+    <test name="Test" duration-ms="129120" started-at="2017-07-22T10:56:59Z" finished-at="2017-07-22T10:59:08Z">
+      <class name="com.BSNL.WebUI.test.login.SignInTC06">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC06@424e1977]" name="Setup" is-config="true" duration-ms="6056" started-at="2017-07-22T16:28:21Z" finished-at="2017-07-22T16:28:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="SignIn_TC01()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@55536d9e]" name="SignIn_TC01" duration-ms="6375" started-at="2017-07-22T03:09:24Z" finished-at="2017-07-22T03:09:30Z">
+        <test-method status="PASS" signature="SignIn_TC06()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC06@424e1977]" name="SignIn_TC06" duration-ms="40624" started-at="2017-07-22T16:28:27Z" finished-at="2017-07-22T16:29:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignIn_TC01 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@55536d9e]" name="TearDown" is-config="true" duration-ms="106" started-at="2017-07-22T03:09:30Z" finished-at="2017-07-22T03:09:30Z">
+        </test-method> <!-- SignIn_TC06 -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC06@424e1977]" name="TearDown" is-config="true" duration-ms="73" started-at="2017-07-22T16:29:08Z" finished-at="2017-07-22T16:29:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@55536d9e]" name="closeExtentReport" is-config="true" duration-ms="316" started-at="2017-07-22T03:10:44Z" finished-at="2017-07-22T03:10:44Z">
+      </class> <!-- com.BSNL.WebUI.test.login.SignInTC06 -->
+      <class name="com.BSNL.WebUI.test.login.SignInTC01">
+        <test-method status="PASS" signature="folderCreate()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@2638011]" name="folderCreate" is-config="true" duration-ms="209" started-at="2017-07-22T16:26:59Z" finished-at="2017-07-22T16:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- folderCreate -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@2638011]" name="Setup" is-config="true" duration-ms="7006" started-at="2017-07-22T16:26:59Z" finished-at="2017-07-22T16:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="SignIn_TC01()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@2638011]" name="SignIn_TC01" duration-ms="6858" started-at="2017-07-22T16:27:06Z" finished-at="2017-07-22T16:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn_TC01 -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@2638011]" name="TearDown" is-config="true" duration-ms="129" started-at="2017-07-22T16:27:13Z" finished-at="2017-07-22T16:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC01@2638011]" name="closeExtentReport" is-config="true" duration-ms="588" started-at="2017-07-22T16:29:08Z" finished-at="2017-07-22T16:29:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeExtentReport -->
       </class> <!-- com.BSNL.WebUI.test.login.SignInTC01 -->
       <class name="com.BSNL.WebUI.test.login.SignInTC05">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC05@346d61be]" name="Setup" is-config="true" duration-ms="5902" started-at="2017-07-22T03:10:25Z" finished-at="2017-07-22T03:10:31Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC05@6a2b953e]" name="Setup" is-config="true" duration-ms="5496" started-at="2017-07-22T16:28:03Z" finished-at="2017-07-22T16:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="SignIn_TC03()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC05@346d61be]" name="SignIn_TC03" duration-ms="10561" started-at="2017-07-22T03:10:31Z" finished-at="2017-07-22T03:10:41Z">
+        <test-method status="PASS" signature="SignIn_TC05()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC05@6a2b953e]" name="SignIn_TC05" duration-ms="12159" started-at="2017-07-22T16:28:09Z" finished-at="2017-07-22T16:28:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignIn_TC03 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC05@346d61be]" name="TearDown" is-config="true" duration-ms="2326" started-at="2017-07-22T03:10:41Z" finished-at="2017-07-22T03:10:44Z">
+        </test-method> <!-- SignIn_TC05 -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC05@6a2b953e]" name="TearDown" is-config="true" duration-ms="96" started-at="2017-07-22T16:28:21Z" finished-at="2017-07-22T16:28:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.BSNL.WebUI.test.login.SignInTC05 -->
       <class name="com.BSNL.WebUI.test.login.SignInTC04">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC04@7690781]" name="Setup" is-config="true" duration-ms="5791" started-at="2017-07-22T03:10:08Z" finished-at="2017-07-22T03:10:13Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC04@6ff29830]" name="Setup" is-config="true" duration-ms="5506" started-at="2017-07-22T16:27:46Z" finished-at="2017-07-22T16:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="SignIn_TC03()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC04@7690781]" name="SignIn_TC03" duration-ms="11379" started-at="2017-07-22T03:10:13Z" finished-at="2017-07-22T03:10:25Z">
+        <test-method status="PASS" signature="SignIn_TC04()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC04@6ff29830]" name="SignIn_TC04" duration-ms="11592" started-at="2017-07-22T16:27:52Z" finished-at="2017-07-22T16:28:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignIn_TC03 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC04@7690781]" name="TearDown" is-config="true" duration-ms="87" started-at="2017-07-22T03:10:25Z" finished-at="2017-07-22T03:10:25Z">
+        </test-method> <!-- SignIn_TC04 -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC04@6ff29830]" name="TearDown" is-config="true" duration-ms="73" started-at="2017-07-22T16:28:03Z" finished-at="2017-07-22T16:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.BSNL.WebUI.test.login.SignInTC04 -->
       <class name="com.BSNL.WebUI.test.login.SignInTC03">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC03@747edf66]" name="Setup" is-config="true" duration-ms="6595" started-at="2017-07-22T03:09:48Z" finished-at="2017-07-22T03:09:55Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC03@313b2ea6]" name="Setup" is-config="true" duration-ms="5787" started-at="2017-07-22T16:27:29Z" finished-at="2017-07-22T16:27:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="SignIn_TC03()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC03@747edf66]" name="SignIn_TC03" duration-ms="10754" started-at="2017-07-22T03:09:55Z" finished-at="2017-07-22T03:10:06Z">
+        <test-method status="PASS" signature="SignIn_TC03()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC03@313b2ea6]" name="SignIn_TC03" duration-ms="10999" started-at="2017-07-22T16:27:35Z" finished-at="2017-07-22T16:27:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn_TC03 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC03@747edf66]" name="TearDown" is-config="true" duration-ms="2087" started-at="2017-07-22T03:10:06Z" finished-at="2017-07-22T03:10:08Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC03@313b2ea6]" name="TearDown" is-config="true" duration-ms="65" started-at="2017-07-22T16:27:46Z" finished-at="2017-07-22T16:27:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.BSNL.WebUI.test.login.SignInTC03 -->
       <class name="com.BSNL.WebUI.test.login.SignInTC02">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC02@3e6ef8ad]" name="Setup" is-config="true" duration-ms="6370" started-at="2017-07-22T03:09:30Z" finished-at="2017-07-22T03:09:37Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC02@2f465398]" name="Setup" is-config="true" duration-ms="6141" started-at="2017-07-22T16:27:13Z" finished-at="2017-07-22T16:27:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="SignIn_TC02()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC02@3e6ef8ad]" name="SignIn_TC02" duration-ms="9541" started-at="2017-07-22T03:09:37Z" finished-at="2017-07-22T03:09:46Z">
+        <test-method status="PASS" signature="SignIn_TC02()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC02@2f465398]" name="SignIn_TC02" duration-ms="9529" started-at="2017-07-22T16:27:20Z" finished-at="2017-07-22T16:27:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn_TC02 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC02@3e6ef8ad]" name="TearDown" is-config="true" duration-ms="2109" started-at="2017-07-22T03:09:46Z" finished-at="2017-07-22T03:09:48Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.BSNL.WebUI.test.login.SignInTC02@2f465398]" name="TearDown" is-config="true" duration-ms="90" started-at="2017-07-22T16:27:29Z" finished-at="2017-07-22T16:27:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

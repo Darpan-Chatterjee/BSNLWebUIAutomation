@@ -39,7 +39,7 @@ public class SignInTC04 {
 	}
 	
 	@Test
-	public void SignIn_TC03() throws Exception
+	public void SignIn_TC04() throws Exception
 	{
 		GlobalVariable.test=GlobalVariable.extent.startTest("Test Case Id : SignIn TC04", "Description: To Validate error msgs if sign in is clicked without providing only username.");
 		String actualTitle = GlobalVariable.driver.getTitle();

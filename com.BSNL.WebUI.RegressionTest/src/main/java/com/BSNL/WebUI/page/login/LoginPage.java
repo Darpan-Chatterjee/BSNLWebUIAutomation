@@ -2,13 +2,13 @@ package com.BSNL.WebUI.page.login;
 
 import java.util.Properties;
 
-import com.BSNL.WebUI.Utility.Methods.GlobalVariable;
 import com.BSNL.WebUI.Utility.Methods.UtilityMethods;
 
 public class LoginPage {
 	
 	private String signIn,userName,password,signInButton;
 	private String error1,error2,error3,error4;
+	private String dashBoardHDR;
 	private String configPath="..\\com.BSNL.WebUI.RegressionTest\\src\\main\\resources\\PageMap\\login\\loginConfig.properties";
 	UtilityMethods util = new UtilityMethods();
 	
@@ -23,6 +23,7 @@ public class LoginPage {
 		error2=prop.getProperty("error2");
 		error3=prop.getProperty("error3");
 		error4=prop.getProperty("error4");
+		dashBoardHDR=prop.getProperty("dashBoardHDR");
 	}	
 	
 	public String signIn()
@@ -113,7 +114,7 @@ public class LoginPage {
 				}
 				catch(Exception ex)
 				{
-					error[0]=GlobalVariable.driver.getTitle();
+					error[0]=util.getLocator(dashBoardHDR).getText();
 				}	
 			}
 		}

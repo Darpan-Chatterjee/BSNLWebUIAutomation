@@ -64,7 +64,7 @@ public class UtilityMethods {
 		String cellValue=null;
 		int tcRowNum=-1;
 		int colNum=-1;
-		for(int i=0;i<lastRowNum;i++)
+		for(int i=0;i<=lastRowNum;i++)
 		{
 			rowTempVal=GlobalVariable.wb.getSheetAt(0).getRow(i).getCell(0).getStringCellValue();
 			if(rowTempVal.equals(TCName))
