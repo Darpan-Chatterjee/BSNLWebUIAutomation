@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -25,23 +24,23 @@ public class UtilityMethods {
 	
 	public WebDriver openURL(String browserName,String URL)
 	{
-		switch(browserName)
+		if(browserName.equals("Firefox"))
 		{
-			case "Firefox":
-				GlobalVariable.driver = new FirefoxDriver();
-				break;
-			case "Chrome":
-				System.setProperty("webdriver.chrome.driver", "..\\com.BSNL.WebUI.RegressionTest\\src\\test\\resources\\BrowserDriver\\chromedriver.exe");
-				GlobalVariable.driver = new ChromeDriver();
-				break;
-			case "IE":
-				System.setProperty("webdriver.ie.driver", "..\\com.BSNL.WebUI.RegressionTest\\src\\test\\resources\\BrowserDriver\\IEDriverServer.exe");
-				GlobalVariable.driver = new InternetExplorerDriver();
-				break;		
+			GlobalVariable.driver = new FirefoxDriver();
+		}
+		else if(browserName.equals("Chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver", "..\\com.BSNL.WebUI.RegressionTest\\src\\test\\resources\\BrowserDriver\\chromedriver.exe");
+			GlobalVariable.driver = new ChromeDriver();
+		}
+		else if(browserName.equals("IE"))
+		{
+			System.setProperty("webdriver.ie.driver", "..\\com.BSNL.WebUI.RegressionTest\\src\\test\\resources\\BrowserDriver\\IEDriverServer.exe");
+			GlobalVariable.driver = new InternetExplorerDriver();
 		}
 		GlobalVariable.driver.manage().window().maximize();
 		GlobalVariable.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		GlobalVariable.driver.get(URL);	
+		GlobalVariable.driver.get(URL);
 		return GlobalVariable.driver;
 	}
 	
