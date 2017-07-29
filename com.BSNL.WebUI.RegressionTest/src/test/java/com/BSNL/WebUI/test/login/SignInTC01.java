@@ -72,7 +72,7 @@ public class SignInTC01 {
 		boolean mkSuccessful = false,deleteSuccessful,srnshtSuccessful;
 		try{	
 		GlobalVariable.strDirectoy ="Login";
-		String path = "..\\com.BSNL.WebUI.RegressionTest\\TestResult\\Test Result_"+GlobalVariable.strDirectoy;
+		String path = "..\\com.BSNL.WebUI.RegressionTest\\TestResult\\Test_Result_"+GlobalVariable.strDirectoy;
 		//Create Folder for result file storage
 		GlobalVariable.dir=new File(path);
 		if(GlobalVariable.dir.exists())
@@ -104,7 +104,7 @@ public class SignInTC01 {
 	    }
 	    //Set the full filename for extent reports 
 	    String filename = GlobalVariable.dir+"\\Login_Result.html";
-	    GlobalVariable.strDirectoy="Test Result_"+GlobalVariable.strDirectoy;
+	    GlobalVariable.strDirectoy="Test_Result_"+GlobalVariable.strDirectoy;
 	    GlobalVariable.extent = new ExtentReports(filename);
 		}catch(Exception e){
 			e.printStackTrace();
