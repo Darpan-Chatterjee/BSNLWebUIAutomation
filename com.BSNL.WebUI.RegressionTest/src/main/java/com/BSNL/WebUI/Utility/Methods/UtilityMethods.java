@@ -166,4 +166,20 @@ public class UtilityMethods {
 		WebElement getElementXpath = myWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		return getElementXpath;
 	}
+	
+	public boolean removeDirectory(File dir) {
+		boolean status=false;
+	    if (dir.isDirectory()) {
+	        File[] files = dir.listFiles();
+	        if (files != null && files.length > 0) {
+	            for (File aFile : files) {
+	                removeDirectory(aFile);
+	            }
+	        }
+	        status=dir.delete();
+	    } else {
+	    	status=dir.delete();
+	    }
+	    return status;
+	}
 }

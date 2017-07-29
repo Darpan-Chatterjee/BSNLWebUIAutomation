@@ -2,8 +2,6 @@ package com.BSNL.WebUI.test.login;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.Properties;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -33,8 +31,8 @@ public class SignInTC01 {
 		expectedTitleLogin=util.SearchExcel(loginExcelPath, "Sign In_TC01", "Field 2");
 	}
 	
-	@BeforeTest
-	public void folderCreate()
+	/* ----------------------Folder Creation Logic Has Changed ----------------------*/
+	/*public void folderCreate()
 	{
 		try{	
 		//Get system time in MMddyyyy_HHMM format
@@ -62,6 +60,51 @@ public class SignInTC01 {
 	    //Set the full filename for extent reports 
 	    String filename = GlobalVariable.dir+"\\Login_Result.html";
 	    GlobalVariable.strDirectoy="Login_"+GlobalVariable.strDirectoy;
+	    GlobalVariable.extent = new ExtentReports(filename);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}*/
+	
+	@BeforeTest
+	public void folderCreate()
+	{
+		boolean mkSuccessful = false,deleteSuccessful,srnshtSuccessful;
+		try{	
+		GlobalVariable.strDirectoy ="Login";
+		String path = "..\\com.BSNL.WebUI.RegressionTest\\TestResult\\Test Result_"+GlobalVariable.strDirectoy;
+		//Create Folder for result file storage
+		GlobalVariable.dir=new File(path);
+		if(GlobalVariable.dir.exists())
+		{
+			deleteSuccessful=util.removeDirectory(GlobalVariable.dir);
+			if(deleteSuccessful){
+			System.out.println("Existing Directory Deleted");
+			mkSuccessful = GlobalVariable.dir.mkdir();
+			}
+			else
+				System.out.println("Cannot Delete Existing Directory");	
+		}
+		else
+		{
+			mkSuccessful = GlobalVariable.dir.mkdir();
+		}
+		GlobalVariable.dir2=new File(path+File.separator+"Screenshot");
+		//Create Folder for result file storage
+		srnshtSuccessful = GlobalVariable.dir2.mkdir();
+	    if (mkSuccessful&srnshtSuccessful)
+	    {
+	      // creating the directory succeeded
+	      System.out.println("Directory was created successfully");
+	    }
+	    else
+	    {
+	      // creating the directory failed
+	      System.out.println("Failed -- trying to create the directory");
+	    }
+	    //Set the full filename for extent reports 
+	    String filename = GlobalVariable.dir+"\\Login_Result.html";
+	    GlobalVariable.strDirectoy="Test Result_"+GlobalVariable.strDirectoy;
 	    GlobalVariable.extent = new ExtentReports(filename);
 		}catch(Exception e){
 			e.printStackTrace();
