@@ -3,11 +3,11 @@
   <test name="Test">
     <classes>
       <class name="com.BSNL.WebUI.test.login.SignInTC01"/>
-      <!--  <class name="com.BSNL.WebUI.test.login.SignInTC02"/>
+      <class name="com.BSNL.WebUI.test.login.SignInTC02"/>
       <class name="com.BSNL.WebUI.test.login.SignInTC03"/>
       <class name="com.BSNL.WebUI.test.login.SignInTC04"/>
       <class name="com.BSNL.WebUI.test.login.SignInTC05"/>
-      <class name="com.BSNL.WebUI.test.login.SignInTC06"/>-->
+      <class name="com.BSNL.WebUI.test.login.SignInTC06"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
